@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KILO JULIET</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="kilo juliet portfolio" name="portfolio graphic designer writer">
+    <meta content="portfolio" name="Karen Jil Nakila Bagaol">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/indiagulf.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('img/back/tulip.png');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-position: center;
+        }
+
+        .page-header {
+            background-color: white;
+            position: relative;
+            text-align: center;
+            padding: 100px 0;
+            color: black;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; 
+            flex-wrap: wrap; 
+        }
+
+        .image-container img {
+            max-width: 150px; 
+            height: auto;
+            cursor: pointer; /* Add pointer cursor */
+        }
+
+        .image-viewer {
+    display: none; /* Initially hidden */
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-viewer {
+    display: none; /* Initially hidden */
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewer-content {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; /* Center the content horizontally */
+}
+
+.viewer-content img {
+    max-width: 50%; /* Adjust the maximum width of the image */
+    max-height: 50%; /* Adjust the maximum height of the image */
+    margin: 0 20px; /* Add spacing around the image */
+}
+
+.close-btn {
+    position: absolute; /* Positioning the button */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    color: white;
+    background: none;
+    border: none;
+    font-size: 2rem; /* Size of the close button */
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #ddd; /* Change color on hover */
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="home.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="img/kilospcs.gif" alt="kiloscps-logo" class="img-fluid" style="max-height: 150px;">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="Literature.html" class="nav-item nav-link"><strong> Literature</strong></a>
+                <a href="Design.html" class="nav-item nav-link"><strong> Design</strong></a>
+                <a href="abouther.html" class="nav-item nav-link"><strong>About Her</strong></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <div class="container-fluid page-header py-2 mb-0 wow fadeIn" data-wow-delay="0.1s"> 
+        <div class="container py-5">
+            <h1 class="display-3 mb-2 text-center " style="color: #000000"> ۶ৎDesigns۶ৎ</h1>
+        </div>
+    </div>
+
+    <!-- Button Section -->
+    <div class="container mt-3">
+        <div class="image-container">
+            <a id="pubmatBtn"><img src="img/back/pubmatbt.png" alt="Publication Materials" style="width: 80px; height: 100px;"></a>
+            <a id="posterBtn"><img src="img/back/posterbt.png" alt="Posters" style="width: 80px; height: 100px;"></a>
+            <a id="logoBtn"><img src="img/back/logobt.png" alt="Logos" style="width: 80px; height: 100px; object-fit: contain;"></a>
+            <a id="randomBtn"><img src="img/back/randombt.png" alt="Random Designs" style="width: 80px; height: 100px;"></a>
+        </div>
+    </div>
+
+    <!-- Sections for Each Category -->
+    <div id="pubmatSection" class="container-xxl py-1 mt-0">
+        <div class="container">
+            <h5 class="display-3 mb-2 text-center " style="color: #000000; font-size: 45px"> ୨ৎ PUBLICATION MATERIALS ୨ৎ</h5>
+                <div class="instagram-feed">
+                    <div class="feed-item">
+                        <img src="img/graphic/pubmat/1.png" alt="Photo 1">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/pubmat/2.png" alt="Photo 2">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/pubmat/3.png" alt="Photo 3">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/pubmat/4.png" alt="Photo 4">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/pubmat/5.png" alt="Photo 5">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/pubmat/6.png" alt="Photo 6">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/pubmat/7.png" alt="Photo 7">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/pubmat/8.png" alt="Photo 8">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/pubmat/9.png" alt="Photo 9">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/pubmat/10.png" alt="Photo 10">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/pubmat/7.jpg" alt="Photo 11">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/pubmat/11.png" alt="Photo 12">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="posterSection" class="container-xxl py-5" style="display: none;">
+        <div class="container">
+            <h5 class="display-3 mb-2 text-center " style="color: #000000; font-size: 45px"> ୨ৎPOSTER DESIGNS ୨ৎ</h5>
+            <div class="instagram-feed">
+                <div class="feed-item">
+                    <img src="img/graphic/poster/poster (1).png" alt="Poster 1">
+                </div>
+                <div class="feed-item">
+                    <img src="img/graphic/poster/poster (2).png" alt="Poster 2">
+                </div>
+                <div class="feed-item">
+                    <img src="img/graphic/poster/poster (3).png" alt="Poster 3">
+                </div>
+                <div class="feed-item">
+                    <img src="img/graphic/poster/poster (1).png" alt="Poster 1">
+                </div>
+                <div class="feed-item">
+                    <img src="img/graphic/poster/poster (2).png" alt="Poster 2">
+                </div>
+                <div class="feed-item">
+                    <img src="img/graphic/poster/poster (3).png" alt="Poster 3">
+                </div>
+                <div class="feed-item">
+                    <img src="img/graphic/poster/poster (1).png" alt="Poster 1">
+                </div>
+                <div class="feed-item">
+                    <img src="img/graphic/poster/poster (2).png" alt="Poster 2">
+                </div>
+                <div class="feed-item">
+                    <img src="img/graphic/poster/poster (3).png" alt="Poster 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="logoSection" class="container-xxl py-5" style="display: none;">
+        <div class="container">
+            <h5 class="display-3 mb-2 text-center " style="color: #000000; font-size: 45px"> ୨ৎ LOGO DESIGNS ୨ৎ</h5>
+                <div class="instagram-feed">
+                    <div class="feed-item">
+                        <img src="img/graphic/logos/logo (1).png" alt="Logo 1">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/logos/logo (3).png" alt="Logo 2">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/logos/logo (4).png" alt="Logo 2">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/logos/logo (1).png" alt="Logo 1">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/logos/logo (3).png" alt="Logo 2">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/logos/logo (4).png" alt="Logo 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="randomSection" class="container-xxl py-5" style="display: none;">
+        <div class="container">
+            <h5 class="display-3 mb-2 text-center " style="color: #000000; font-size: 45px"> ୨ৎ RANDOM DESIGNS୨ৎ</h5>
+                <div class="instagram-feed">
+                    <div class="feed-item">
+                        <img src="img/graphic/random/random (1).png" alt="Random 1">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/random/random (2).png" alt="Random 1">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/random/random (3).png" alt="Random 2">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/random/random (4).png" alt="Random 3">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/random/random (5).png" alt="Random 4">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/random/random (6).png" alt="Random 5">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/random/random (7).png" alt="Random 6">
+                    </div>
+                    <div class="feed-item">
+                        <img src="img/graphic/random/random (8).png" alt="Random 7">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="image-viewer" id="imageViewer">
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <div class="viewer-content">
+            <button id="prevImage" class="btn btn-light">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <img id="viewerImage" src="" alt="Viewing Image">
+            <button id="nextImage" class="btn btn-light">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+    
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const pubmatSection = document.getElementById('pubmatSection');
+        const posterSection = document.getElementById('posterSection');
+        const logoSection = document.getElementById('logoSection');
+        const randomSection = document.getElementById('randomSection');
+
+        const imageViewer = document.getElementById('imageViewer');
+        const viewerImage = document.getElementById('viewerImage');
+        const closeBtn = document.getElementById('closeBtn');
+        const prevImage = document.getElementById('prevImage');
+        const nextImage = document.getElementById('nextImage');
+
+        let currentIndex = 0;
+        let images = [];
+
+        // Function to show the sections
+        function showSection(sectionToShow) {
+            const sections = [pubmatSection, posterSection, logoSection, randomSection];
+            sections.forEach(section => {
+                section.style.display = section === sectionToShow ? 'block' : 'none';
+            });
+            sectionToShow.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.getElementById('pubmatBtn').addEventListener('click', function() {
+            showSection(pubmatSection);
+        });
+
+        document.getElementById('posterBtn').addEventListener('click', function() {
+            showSection(posterSection);
+        });
+
+        document.getElementById('logoBtn').addEventListener('click', function() {
+            showSection(logoSection);
+        });
+
+        document.getElementById('randomBtn').addEventListener('click', function() {
+            showSection(randomSection);
+        });
+
+        // Function to open image viewer
+        function openImageViewer(index, imgs) {
+            images = imgs;
+            currentIndex = index;
+            viewerImage.src = images[currentIndex];
+            imageViewer.style.display = 'flex';
+        }
+
+        // Event listeners for images in publication materials
+        const pubmatImages = document.querySelectorAll('#pubmatSection .feed-item img');
+        pubmatImages.forEach((img, index) => {
+            img.addEventListener('click', () => openImageViewer(index, Array.from(pubmatImages).map(image => image.src)));
+        });
+
+
+        // Close button functionality
+        closeBtn.addEventListener('click', () => {
+            imageViewer.style.display = 'none';
+        });
+
+        // Navigation buttons functionality
+        prevImage.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            viewerImage.src = images[currentIndex];
+        });
+
+        nextImage.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            viewerImage.src = images[currentIndex];
+        });
+    </script>
+</body>
+
+</html>

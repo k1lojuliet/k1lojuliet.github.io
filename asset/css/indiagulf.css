@@ -1,0 +1,97 @@
+
+
+
+body {
+    font-family: 'Poppins', sans-serif; /* Poppins font with sans-serif as fallback */
+}
+.instagram-feed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.description {
+    color: black;
+}
+
+.feed-item {
+    margin-bottom: 10px;
+    width: calc(33% - 20px); 
+    cursor: pointer;
+   
+}
+
+.feed-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0); 
+}
+
+.feed-item .description {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Poppins font with sans-serif as fallback */
+}
+        .card {
+            position: relative;
+            overflow: hidden;
+        }
+        .card .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.3s ease;
+        }
+        .card:hover .overlay {
+            opacity: 1;
+        }
+        .overlay a {
+            margin: 5px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .overlay a i {
+            margin-right: 8px;
+        }
+
+        .btn-pill {
+            border-radius: 50px; /* Makes the button pill-shaped */
+            background-color:#FF69B4; /* Rose quartz color */
+            color: #fff; /* Text color */
+            padding: 10px 20px; /* Padding for size */
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+        
+        .btn-pill:hover {
+            background-color: #F0B2B6; /* Darker shade on hover */
+        }
+        
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .feed-item {
+        width: calc(50% - 20px); /* 2 items per row */
+    }
+}
+
+@media (max-width: 576px) {
+    .feed-item {
+        width: 100%; /* 1 item per row on small screens */
+    }
+}
+
