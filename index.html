@@ -1,12 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Test</title>
+    <meta charset="utf-8">
+    <title>KILO JULIET</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="kilo juliet portfolio" name="portfolio graphic designer writer">
+    <meta content="portfolio" name="Karen Jil Nakila Bagaol">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/indiagulf.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a test page for my GitHub Pages site.</p>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="Index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="img/kilospcs.gif" alt="kiloscps-logo" class="img-fluid" style="max-height: 150px;">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="Literature.html" class="nav-item nav-link"><strong> Literature</strong></a>
+                <a href="Design.html" class="nav-item nav-link"><strong> Design</strong></a>
+                <a href="abouther.html" class="nav-item nav-link"><strong>About Her</strong></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- First Page -->
+    <div class="container-fluid header p-0" style="background-image: url('img/back/1.png'); background-size: cover; background-position: center; height: 100vh; position: relative;">
+        <div class="row g-0 align-items-center justify-content-center">
+            <div class="col-lg-6 text-center wow fadeIn" data-wow-delay="0.1s">
+                <img class="img-fluid" src="img/kilos.gif" alt="Centered GIF" style="width: 500px; height: auto;">
+                <div class="text-center py-0">
+                    <a id="literatureBtn">
+                        <img src="img/back/litbt.png" alt="Literature" style="cursor: pointer; width: 100px; margin-top: -20%">
+                    </a>
+                    <a id="designsBtn">
+                        <img src="img/back/designbt.png" alt="Designs" style="cursor: pointer; width: 100px; margin-top: -20%">
+                    </a>
+                    <a id="aboutBtn">
+                        <img src="img/back/aboutbt.png" alt="About" style="cursor: pointer; width: 100px; margin-top: -20%">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Literature Section -->
+    <div id="literatureSection" style="display: none; background-image: url('img/back/23.png'); background-size: cover; background-position: center; height: 100vh; position: relative; padding: 5%; margin-bottom: 5%;">
+        <div class="container text-center">
+            <div class="instagram-feed">
+                <div class="feed-item" data-bs-toggle="modal" data-bs-target="#carouselModal" data-bs-slide-to="0">
+                    <img src="img/lit/poem1.png" alt="Photo 1">
+                </div>
+                <div class="feed-item" data-bs-toggle="modal" data-bs-target="#carouselModal" data-bs-slide-to="1">
+                    <img src="img/lit/poem2.png" alt="Photo 2">
+                </div>
+                <div class="feed-item" data-bs-toggle="modal" data-bs-target="#carouselModal" data-bs-slide-to="2">
+                    <img src="img/lit/poem3.png" alt="Photo 3">
+                </div>
+            </div>
+            <div class="mt-4">
+                <a href="Literature.html" class="btn btn-pill">See More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel Modal for Literature -->
+    <div class="modal fade" id="carouselModal" tabindex="-1" aria-labelledby="carouselModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="literatureCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/lit/poem1.png" class="d-block w-100" alt="Photo 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/lit/poem2.png" class="d-block w-100" alt="Photo 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/lit/poem3.png" class="d-block w-100" alt="Photo 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#literatureCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#literatureCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="designsSection" style="display: none; background-image: url('img/back/23.png'); background-size: cover; background-position: center; height: 100vh; position: relative; padding: 5%; margin-bottom: 5%;" >
+        <div class="container text-center">
+            <div class="instagram-feed">
+                <div class="feed-item" data-bs-toggle="modal" data-bs-target="#designCarouselModal" data-bs-slide-to="0">
+                    <img src="img/graphic/pubmat/1.png" alt="Photo 1">
+                </div>
+                <div class="feed-item" data-bs-toggle="modal" data-bs-target="#designCarouselModal" data-bs-slide-to="1">
+                    <img src="img/graphic/logos/logo (1).png" alt="Photo 2">
+                </div>
+                <div class="feed-item" data-bs-toggle="modal" data-bs-target="#designCarouselModal" data-bs-slide-to="2">
+                    <img src="img/graphic/random/random (3).png" alt="Photo 3">
+                </div>
+            </div>
+            <div class="mt-4">
+                <a href="Design.html" class="btn btn-pill">See More</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Carousel Modal for Designs -->
+    <div class="modal fade" id="designCarouselModal" tabindex="-1" aria-labelledby="designCarouselModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="designCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/graphic/pubmat/1.png" class="d-block w-100" alt="Photo 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/graphic/logos/2.png" class="d-block w-100" alt="Photo 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/graphic/random/2.png" class="d-block w-100" alt="Photo 3">
+                            </div>
+    
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#designCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#designCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="AboutSection" style="display: none; background-image: url('img/back/23.png'); background-size: cover; background-position: center; height: 100vh; position: relative; padding: 5%; margin-bottom: 5%;" >
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s pdf-overlay">
+                        <a href="img/Bagol-Resume.pdf">
+                            <img class="img-fluid w-75 align-self-end" src="img/ol2.png" alt="Click to view PDF">
+                        </a>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <p style="font-size: 30px; color: black;"> 𐙚She is not confident in some things but in designing and writing she can create a new world full of creativity through arts.𐙚</p>
+                        <p class="mb-4"></p>
+                        <p class="about-text"  style=" color: black;"><i class="far fa-check-circle me-5"></i>Social Media Manager</p>
+                        <p class="about-text"  style=" color: black;"><i class="far fa-check-circle  me-5"></i>Freelance Grapher Designer</p>
+                        <p class="about-text"  style=" color: black;"><i class="far fa-check-circle  me-5"></i>Video Editor</p>
+                        <p class="about-text"  style=" color: black;"><i class="far fa-check-circle  me-5"></i>An Aspiring Writer</p>
+                        <p class="about-text"  style=" color: black;"><i class="far fa-check-circle  me-5"></i>Daydreamer</p>
+                    </div>
+                </div>
+                <div class="mt-4 text-center">
+                    <a href="abouther.html" class="btn btn-pill">Check her Resume</a>
+                </div>
+            </div>
+        </div>
+
+    <!-- Footer Section -->
+    <footer style="background-color: #f8f9fa; padding: 20px 0; text-align: center;">
+        <div class="container">
+            <p>&copy; 2024 Kiloscps. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const literatureSection = document.getElementById('literatureSection');
+        const aboutSection = document.getElementById('AboutSection');
+        const designsSection = document.getElementById('designsSection');
+        const literatureBtn = document.getElementById('literatureBtn');
+        const designsBtn = document.getElementById('designsBtn');
+        const aboutBtn = document.getElementById('aboutBtn');
+
+        literatureBtn.addEventListener('click', function() {
+            literatureSection.style.display = 'block';
+            designsSection.style.display = 'none';
+            aboutSection.style.display = 'none';
+            literatureSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to literature section
+        });
+
+        designsBtn.addEventListener('click', function() {
+            literatureSection.style.display = 'none';
+            designsSection.style.display = 'block';
+            aboutSection.style.display = 'none';
+            designsSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to designs section
+        });
+
+        aboutBtn.addEventListener('click', function() {
+            literatureSection.style.display = 'none';
+            designsSection.style.display = 'none';
+            aboutSection.style.display = 'block';
+            aboutSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to about section
+        });
+    </script>
 </body>
+
 </html>
